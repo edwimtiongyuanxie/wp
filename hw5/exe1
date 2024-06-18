@@ -1,0 +1,28 @@
+<html>
+
+<head>
+    <style>
+        button {
+            width: 100px;
+            height: 40px;
+            font-size: 12px;
+            position: absolute;
+        }
+    </style>
+</head>
+
+<body>
+    <button id="button1" onclick="button_click()">click here</button>
+    <script>
+        var button = document.getElementById("button1"); 
+        var size = 12;
+        function button_click() {
+            button.style.width = (button.offsetWidth + 10) + "px";
+            button.style.height = (button.offsetHeight + 10) + "px";
+            size++;
+            button.style.fontSize = size + "px";
+        }
+    </script>
+</body>
+
+</html>
